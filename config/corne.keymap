@@ -24,59 +24,6 @@
  */
 
 / {
-    macros {
-        mov_right: mov_right {
-            label = "mov_right";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LGUI>,
-                <&macro_press>,
-                <&kp LCTRL>,
-                <&macro_tap>,
-                <&kp RIGHT>,
-                <&macro_release>,
-                <&kp LCTRL>,
-                <&macro_release>,
-                <&kp LGUI>;
-        };
-
-        mov_left: mov_left {
-            label = "mov_left";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LGUI>,
-                <&macro_press>,
-                <&kp LCTRL>,
-                <&macro_tap>,
-                <&kp LEFT>,
-                <&macro_release>,
-                <&kp LCTRL>,
-                <&macro_release>,
-                <&kp LGUI>;
-        };
-
-        tog_audio: tog_audio {
-            label = "tog_audio";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_press>,
-                <&kp LCTRL>,
-                <&macro_tap>,
-                <&kp F11>,
-                <&macro_release>,
-                <&kp LCTRL>,
-                <&macro_release>,
-                <&kp LALT>;
-        };
-    };
-
     behaviors {
         ht_hp: positional_hold_tap {
             compatible = "zmk,behavior-hold-tap";
@@ -92,36 +39,6 @@
 
     combos {
         compatible = "zmk,combos";
-
-        t_bind {
-            bindings = <&kp T>;
-            key-positions = <4 3>;
-        };
-
-        g {
-            bindings = <&kp G>;
-            key-positions = <16 15>;
-        };
-
-        b {
-            bindings = <&kp B>;
-            key-positions = <28 27>;
-        };
-
-        y {
-            bindings = <&kp Y>;
-            key-positions = <7 8>;
-        };
-
-        h {
-            bindings = <&kp H>;
-            key-positions = <20 19>;
-        };
-
-        n {
-            bindings = <&kp N>;
-            key-positions = <31 32>;
-        };
 
         alttab {
             bindings = <&kp LA(TAB)>;
