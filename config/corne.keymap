@@ -125,7 +125,8 @@
 
         alttab {
             bindings = <&kp LA(TAB)>;
-            key-positions = <0 40>;
+            key-positions = <0 41>;
+            require-prior-idle-ms = <30>;
         };
     };
 
