@@ -45,6 +45,12 @@
             key-positions = <0 41>;
             require-prior-idle-ms = <30>;
         };
+
+        colon {
+            bindings = <&kp COLON>;
+            key-positions = <25 22>;
+            timeout-ms = <10>;
+        };
     };
 
     keymap {
